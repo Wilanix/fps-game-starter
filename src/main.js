@@ -7,9 +7,9 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #111;
+  background: #101722;
   color: white;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 body {
@@ -71,9 +71,9 @@ canvas {
 
 #crosshair span {
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 #crosshair span::before,
@@ -141,12 +141,24 @@ canvas {
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(7, 12, 20, 0.7);
+  background: rgba(7, 12, 20, 0.75);
   backdrop-filter: blur(6px);
 }
 
 #death-screen.hidden {
   display: none;
+}
+
+.death-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 20, 32, 0.9);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 18px;
+  padding: 28px 36px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 #death-screen h1 {
