@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartoon FPS Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div id="top-bar">
+        <div class="panel stat">
+          <span>Vie</span>
+          <strong id="health">100</strong>
+        </div>
+        <div class="panel stat">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="panel stat">
+          <span>Arme</span>
+          <strong id="weapon-name">Pistolet</strong>
+        </div>
+      </div>
+
+      <div id="crosshair"><span></span></div>
+
+      <div id="ammo-panel" class="panel">
+        <span id="ammo-text">12 / 60</span>
+      </div>
+
+      <div id="weapon-rarity" class="panel rarity-common">Commun</div>
+
+      <div id="message">Cliquez pour commencer</div>
+
+      <div id="death-screen" class="hidden">
+        <h1>Tu as été éliminé</h1>
+        <p id="final-score">Score final : 0</p>
+        <button id="restart-btn">Rejouer</button>
+      </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
